@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Apuestas - Panel de Usuario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Barra lateral */
+        .sidebar {
+            width: 250px;
+            background: #222;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+            background: #167244;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            background: #1ABC9C;
+        }
+
+        /* Contenido principal */
+        .content {
+            flex: 1;
+            padding: 20px;
+            background: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #167244;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .saldo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-top: 20px;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin-bottom: 15px;
+        }
+
+        .apuesta {
+            background: white;
+            padding: 10px;
+            border-left: 5px solid #167244;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .apuesta span {
+            font-weight: bold;
+        }
+
+        .boton {
+            background: #167244;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .boton:hover {
+            background: #1ABC9C;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h2>Mi Cuenta</h2>
+        <a href="#">🏠 Inicio</a>
+        <a href="#">💰 Depositar Fondos</a>
+        <a href="#">📤 Retirar Dinero</a>
+        <a href="#">⚽ Mis Apuestas</a>
+        <a href="#">🔧 Configuración</a>
+        <a href="#">🚪 Cerrar Sesión</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <!-- Encabezado -->
+        <div class="header">
+            <h2>Panel de Usuario</h2>
+            <div class="saldo">Saldo: <span>€250.00</span></div>
+        </div>
+
+        <!-- Últimas apuestas -->
+        <div class="section">
+            <h3>Últimas Apuestas</h3>
+            <div class="apuesta">
+                <span>Real Madrid vs Barcelona</span> - Ganaste €50
+            </div>
+            <div class="apuesta">
+                <span>Manchester United vs Chelsea</span> - Perdiste €30
+            </div>
+            <div class="apuesta">
+                <span>Juventus vs Milan</span> - Ganaste €20
+            </div>
+            <a href="#" class="boton">Ver todas las apuestas</a>
+        </div>
+
+        <!-- Opciones de depósito/retiro -->
+        <div class="section">
+            <h3>Operaciones Financieras</h3>
+            <a href="#" class="boton">💰 Depositar Fondos</a>
+            <a href="#" class="boton">📤 Retirar Dinero</a>
+        </div>
+    </div>
+
+</body>
+</html>
