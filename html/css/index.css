@@ -3,13 +3,17 @@
         min-height: 100vh;
         margin: 0;
         padding: 0;
-        background: linear-gradient(to bottom, #A4FF00 10%,black );
+        background: linear-gradient(to bottom, #434343 90%,white );
         
     }
 
+    html::-webkit-scrollbar{
+        display: none;
+}
+
 body{
     display: grid;
-    grid-template-rows: 100px 1fr 200px;
+    grid-template-rows: 100px 1fr 100px;
     grid-template-areas: 
     "header header"
     "main main" 
@@ -99,8 +103,8 @@ body{
 #bienvenida a{
     text-align: center;
     text-decoration: none;
-    color: black;
-    background-color: #A4FF00;
+    color: white;
+    background-color: #434343;
     border: 1px solid black;
     padding: 10px 60px;
     border-radius: 20px;
@@ -111,7 +115,7 @@ body{
 #bienvenida a:hover{
     border: none;
     background-color: black;
-    color: white;
+    color: #A4FF00;
 }
 
 #footer-grid{
@@ -126,8 +130,10 @@ body{
     vertical-align:middle;
     justify-content: center;
     align-items:end;
+    color: black;
 }
 
+
 #footer-grid p a{
-    color: wheat;
+    color: black;
 }

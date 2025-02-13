@@ -3,13 +3,17 @@ html, body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #A4FF00 10%,black );
+    background: linear-gradient(to bottom, #434343 90%,white );
     
+}
+
+html::-webkit-scrollbar{
+    display: none;
 }
 
 body{
     display: grid;
-    grid-template-rows: 100px auto 200px;
+    grid-template-rows: 100px 1fr 200px;
     grid-template-areas: 
     "header header"
     "main main" 
@@ -226,12 +230,13 @@ body{
     vertical-align:middle;
     justify-content: center;
     align-items:end;
-
+    color: black;
+    margin-left: 35%;
 }
 
 
 #footer-grid p a{
-    color: wheat;
+    color: black;
 }
 
 .oculto {
