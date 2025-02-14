@@ -137,3 +137,57 @@ body{
 #footer-grid p a{
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container {
+        flex-direction: column; /* Cambia de fila a columna en móviles */
+        align-items: center;
+    }
+
+    #left, #right {
+        width: 100%; /* Ocuparán toda la pantalla */
+        height: auto;
+    }
+
+    #left img {
+        width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto;
+    }
+
+    #right {
+        background-size: contain; /* Ajusta la imagen de fondo */
+        background-position: center;
+    }
+
+    #bienvenida {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #bienvenida h1 {
+        font-size: 1.5em;
+    }
+
+    #bienvenida a {
+        padding: 8px 40px;
+        font-size: 0.9em;
+    }
+
+    #header-grid {
+        height: 80px; /* Reduce la altura del header */
+    }
+
+    #header-grid img {
+        height: 80%;
+    }
+
+    #footer-grid {
+        height: 80px; /* Reduce la altura del footer */
+        font-size: 0.8em;
+    }
+}
