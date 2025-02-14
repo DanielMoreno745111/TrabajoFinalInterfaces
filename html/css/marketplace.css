@@ -168,14 +168,6 @@ iframe{
     color:black;
 }
 
-#body-grid{
-    grid-area: main;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
-}
-
 #presentacion{
     margin-top: 2%;
     display: flex;
@@ -208,52 +200,7 @@ iframe{
 
 #card-titulo span{
     color: #A4FF00;
-}
-
-#card-cuerpo{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-
-.caja_dinero:hover{
-    width: 50%;
-    height: 100%;
-    font-size: 40px;
-}
-
-.caja_dinero{
-    width: 20%;
-    height: 50%;
-    transition: all 0.3s ease;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid gray;
-    border-radius: 20px;
-    box-shadow: 1px 2px 1px black;
-}
-
-#disponible:hover span{
-    color: #D2B48C;
-}
-
-#perdido:hover span{
-    color: red;
-}
-#ganado:hover span{
-    color: #A4FF00;
-}
-
-#neto:hover span{
-    color: darkblue;
+    background-color: #2A2A2A;
 }
 
 #cuerpo{
@@ -301,6 +248,11 @@ iframe{
     transition: background-color 0.3s ease-in-out;
 }
 
+#apuestas li a{
+    margin-left: 1%;
+    color: black;
+    text-decoration: none;
+}
 
 
 #apuestas li:hover{
@@ -309,86 +261,19 @@ iframe{
 
 }
 
-#historial-apuestas{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    font-size: 18px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-
-#historial-apuestas li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 800px;
-    padding: 9px 0px;
+#apuestas li:hover a{
+    background-color: black;
+    color: #A4FF00;
+    padding: 1%;
     border-radius: 20px;
-    scroll-snap-align: start; /* Hace que cada elemento se alinee al inicio */
-    transition: background-color 0.3s ease-in-out;
 }
 
-#historial-apuestas li span{
-    margin-left: 1%;
-    color: gray;
-    transition: color 0.3s ease;
-
-}
-
-#historial-apuestas::-webkit-scrollbar{
-    display: none;
-}
-
-#card-friend{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease;
-    min-width: 25%;
-    max-width: 25%; 
-    height: 90%;
-    margin-left: 8%;
-    text-align: center;
-    }
-
-#card-friend:hover{
-    width: 50%; 
-    height: 95%;
-    border-radius: 40px;
-}
-
-#cuerpo::-webkit-scrollbar{
-    display: none;
-}
-
-#card-friend button{
-    margin-top: 5%;
-    width: 150px;
-    height: 200px;
-    padding: 20px;
-    border-radius: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: none;
-    transition: transform 0.3s;
-}
-
-#card-friend h2, #card-friend h3{
+#body-grid{
+    grid-area: main;
     width: 100%;
-    height: 20%;
-    margin: 5%;
+    display: flex;
+    flex-direction: row;
+
 }
 
 #footer-grid{
@@ -405,40 +290,4 @@ iframe{
 
 #footer-grid p a{
     color: black;
-}
-
-
-.ganado:hover{
-    background-color: green;
-}
-
-#historial-apuestas li.ganado:hover span, #historial-apuestas li.perdido:hover span{
-    color: black;
-}
-
-.perdido:hover{
-    background-color: red;
-}
-
-#npc1{
-    background-image: url('../img/npc2.png');
-}
-
-#npc2{
-    background-image: url('../img/npc3.png');
-
-}
-
-#npc3{
-    background-image: url('../img/npc1.png');
-
-}
-
-#npc4{
-    background-image: url('../img/npc4.png');
-}
-
-#npc5{
-    background-image: url('../img/npc5.png');
-
 }
