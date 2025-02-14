@@ -176,15 +176,145 @@ iframe{
 
 }
 
+#presentacion{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+
+#tituloInicial span{
+    background-color: black;
+    color: #A4FF00;
+}
+
+#card{
+    width: 80%;
+    height: 400px;
+    background-color: gray;
+    margin: 2%;
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 0px 4px 10px #2A2A2A;
+    display: flex;
+    flex-direction: column;
+}
+
+#card-titulo{
+    width: 28%;
+}
+
+#card-titulo span{
+    color: #A4FF00;
+}
+
+#cuerpo{
+    position: sticky;
+    top: 0px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap; /* Evita el salto de línea */
+}
+
+#card-desafio{
+    min-width: 45%;
+    height: 80%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cuerpo::-webkit-scrollbar{
+    display: none;
+}
+
+#desafio{
+    width: 90%;
+    height: 40%;
+    margin: 2%;
+    background-color: darkgrey;
+    border-radius: 40px;
+    box-shadow: 1px 5px 1px black;
+    font-size:medium;
+    transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+
+}
+
+#desafio:hover{
+    background-color: #2A2A2A;
+    color: gray;
+}
+
+#ranking{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#ranking li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    padding: 9px 0px;
+    scroll-snap-align: start; /* Hace que cada elemento se alinee al inicio */
+    transition: background-color 0.3s ease-in-out;
+}
+
+#ranking::-webkit-scrollbar{
+    display: none;
+}
+
+ul#ranking li:nth-child(odd){
+    background-color: #2A2A2A;
+}
+
+ul#ranking li:nth-child(even){
+    background-color: #A4FF00;
+}
+
+.primero{
+    background-color: #FFD700 !important;
+}
+
+.segundo{
+    background-color: #C0C0C0 !important;
+}
+
+.tercero{
+    background-color: #CD7F32 !important;
+}
+
 #footer-grid{
     position: relative;
     width: 100%;
     display: flex;
-    text-align: center;
-    justify-content: end;
-    align-items:end;
     color: black;
-    margin-left: 5%;
+    align-items: flex-end;
+    text-align: center;
+    font-size: small;
+    margin-left: 60%;
 }
 
 
