@@ -225,12 +225,13 @@ body{
 }
 
 #footer-grid{
+    position: relative;
+    width: 100%;
     display: flex;
-    text-align: center;
-    vertical-align:middle;
-    justify-content: center;
-    align-items:end;
     color: black;
+    align-items: flex-end;
+    text-align: center;
+    font-size: small;
     margin-left: 35%;
 }
 

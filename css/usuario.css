@@ -395,11 +395,11 @@ iframe{
     position: relative;
     width: 100%;
     display: flex;
-    text-align: center;
-    justify-content: end;
-    align-items:end;
     color: black;
-    margin-left: 5%;
+    align-items: flex-end;
+    text-align: center;
+    font-size: small;
+    margin-left: 50%;
 }
 
 
