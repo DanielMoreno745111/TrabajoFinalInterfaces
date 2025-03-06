@@ -46,3 +46,10 @@ Inicio del sistema de apuestas y gestión de usuarios.
 
 Integración de funciones de red social para compartir y comentar apuestas.
 
+### v1.0
+
+Creacion del Asistente IA e implementacion en usuario, ranking y marketplace 
+
+Uso de tailwind (sin instalar) para la implentenación de esta
+
+Creacion de animaciones en registro (formulario), en usuario, en el asistente ia (al abrir el menu de interación)
