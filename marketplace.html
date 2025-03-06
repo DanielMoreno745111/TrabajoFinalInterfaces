@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/marketplace.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>marketplace</title>
 </head>
 <body>
@@ -106,10 +107,33 @@
             
         </div>
     </main>
+    <div id="floating-menu" class="fixed bottom-5 left-5">
+        <!-- Imagen interactiva -->
+        <img src="img/pelota.png" 
+            alt="Imagen interactiva" 
+            class="w-20 h-20 rounded-full cursor-pointer hover:opacity-80 transition"
+            onclick="toggleMenu()">
+    
+        <div id="menu" 
+            class="absolute bottom-24 left-0 w-48 bg-gray-400 bg-opacity-80 shadow-lg rounded-3xl opacity-0 scale-95 transition-all duration-300 invisible">
+            <ul class="text-center py-8 bg-transparent rounded-3xl shadow-lg max-w-xl mx-auto relative">
+                <li class="px-8 py-4 hover:bg-gray-500 cursor-pointer rounded-lg">Preguntas Frecuentes</li>
+                <li class="px-8 py-4 hover:bg-gray-500 cursor-pointer rounded-lg">Errores frecuentes</li>
+                <li class="px-8 py-4 hover:bg-gray-500 cursor-pointer rounded-lg">Ranking de amigos</li>
+                <li class="px-8 py-4 hover:bg-gray-500 cursor-pointer rounded-lg">Contacta con nosotros</li>
+                
+                <!-- Pico del bocadillo con transparencia -->
+                <div class="absolute bottom-[-9px] left-[15px] transform translate-y-1/2 w-0 h-0 border-t-[20px] border-t-[#9CA3AF] border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent"></div>
+            </ul>
+        </div>
+    </div>
+    
     <footer id="footer-grid">
         <p>&copy; 2025 One Goal. Todos los derechos reservados. | <a href="#">Pliítica de Privacidad</a> | <a href="#">Términos y Condiciones</a> | <a href="#">Contacto</a>
 
             Síguenos en: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="Instagram"></a> | <a href="#">LinkedIn</a></p>
     </footer>
+    <script src="./js/ia.js"></script>
+
 </body>
 </html>
