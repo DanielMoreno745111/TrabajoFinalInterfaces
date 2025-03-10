@@ -53,3 +53,13 @@ Creacion del Asistente IA e implementacion en usuario, ranking y marketplace
 Uso de tailwind (sin instalar) para la implentenación de esta
 
 Creacion de animaciones en registro (formulario), en usuario, en el asistente ia (al abrir el menu de interación)
+
+### 2.0
+
+Implementación de accesibilidad en el proyecto siguiendo los siguientes resultafos a 10/03/2025
+
+index 98 98
+register 95 95
+usuario 93 93
+Marketplace 100 100
+ranking 95 95
